@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q2SW2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/abstract-blue-technology-background_23-2149352058.jpg?semt=ais_hybrid'); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        label {
+            font-style: italic;
+            font-weight: bold;
+            color: white;
+        }
+
+        #submit {
+            background-color: lightblue;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1><span style="color:white;font-family: sans-serif;">Robotics Club Membership Form</span></h1>
+    </div>
+    <br>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="number" name="number" class="form-control">
+                </div>
+            </div>
+            <br>
+            <label for="topics">Preferred Robotics Topics:</label>
+            <br>
+            <div>
+                <input type="checkbox" id="program" name="topics" value="Programming">
+                <label for="program">Programming</label>
+                <br>
+                <input type="checkbox" id="electronics" name="topics" value="Electronics">
+                <label for="electronics">Electronics</label>
+                <br>
+                <input type="checkbox" id="mechanical" name="topics" value="Mechanical Design">
+                <label for="mechanical">Mechanical Design</label>
+            </div>
+            <br>
+
+            <label for="topics">Robotics Experience Level</label>
+            <br>
+            <div>
+                <input type="radio" id="beginner" name="experience" value="beginner">
+                <label for="program">Beginner</label>
+                <br>
+                <input type="radio" id="intermediate" name="topics" value="intermediate">
+                <label for="intermediate">Intermediate</label>
+                <br>
+                <input type="radio" id="advanced" name="topics" value="advanced">
+                <label for="advanced">Advanced</label>
+            </div>
+            <br>
+            
+            
+            <label for="project">Preferred Robotics Project:</label>
+            <br>
+            <select id="project" name="project" class="form-select">
+                <option value="robotic_arm">Robotic Arm</option>
+                <option value="cleaning_robot">Cleaning Robot</option>
+                <option value="voice_commanded_robot">Voice Commanded Robot</option>
+                <option value="brain_controlled_robot">Brain Controlled Robot</option>
+                <option value="gesture_controlled_robot">Gesture Controlled Robot</option>
+            </select>
+            <br><br>
+            
+            <label for="why">Why do you want to join this club?</label>
+            <textarea id="why" name="why" rows="4" cols="30" placeholder="Type your answer here..." class="form-control" required></textarea>
+            <br>
+            
+            <input type="submit" id="submit" name="submit" value="Join Now!" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>
